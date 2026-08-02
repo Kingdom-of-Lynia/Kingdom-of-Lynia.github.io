@@ -241,3 +241,8 @@ header h1{
 }
 
 }
+.image-placeholder img {
+  max-width: 500px; /* Ensures it never gets wider than 500px */
+  width: 100%;       /* Allows it to shrink on smaller screens */
+  height: auto;      /* Keeps the original aspect ratio so it doesn't distort */
+}
