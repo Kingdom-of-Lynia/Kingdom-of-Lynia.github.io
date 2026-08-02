@@ -253,6 +253,7 @@ footer {
     .image img, 
     .image-placeholder img,
     .placeholder {
-        max-width: 100%;
+        max-width: 450px
+        max-height: 270px
     }
 }
