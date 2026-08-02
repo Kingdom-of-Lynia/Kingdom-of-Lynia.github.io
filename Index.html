@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kingdom of Lynia</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:#F4D03F;
+    color:#222;
+}
+
+/* HERO */
+
+header{
+    background:#D90429;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+    border-bottom:10px solid #F4D03F;
+}
+
+header img{
+    width:170px;
+    margin-bottom:25px;
+}
+
+header h1{
+    font-size:3.4em;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2em;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* SECTION */
+
+.section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+
+    padding:70px 10%;
+    background:white;
+
+    border-bottom:12px solid #D90429;
+}
+
+.section:nth-child(even){
+    background:#F8F8F8;
+}
+
+.section:nth-child(odd){
+    flex-direction:row-reverse;
+}
+
+.image-placeholder{
+
+    width:380px;
+    height:250px;
+
+    border:5px solid #D90429;
+    background:#F4D03F;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#D90429;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.text{
+    flex:1;
+    max-width:700px;
+}
+
+.text h2{
+
+    color:#D90429;
+    font-size:2.4em;
+
+    margin-bottom:20px;
+}
+
+.text p{
+
+    font-size:1.1em;
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#D90429;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+@media(max-width:900px){
+
+.section,
+.section:nth-child(odd){
+
+    flex-direction:column;
+}
+
+.image-placeholder{
+
+    width:100%;
+    max-width:450px;
+}
+
+header h1{
+
+    font-size:2.3em;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- Replace with your flag -->
+    <img src="flag.png" alt="Kingdom of Lynia Flag">
+
+    <h1>Kingdom of Lynia</h1>
+
+    <p>
+        A sovereign kingdom dedicated to tradition, prosperity,
+        and the continued development of the Lynian nation.
+    </p>
+
+</header>
+
+<section class="section">
+
+<div class="image-placeholder">
+History Image
+</div>
+
+<div class="text">
+
+<h2>History</h2>
+
+<p>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace
+this with a concise history of the Kingdom of Lynia describing its
+founding, important milestones, national traditions, and historical
+development.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="image-placeholder">
+Monarchy Image
+</div>
+
+<div class="text">
+
+<h2>Monarchy</h2>
+
+<p>
+
+Introduce the reigning monarch, royal family, succession,
+responsibilities, and the ceremonial role of the Crown within
+the Kingdom of Lynia.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="image-placeholder">
+Government Image
+</div>
+
+<div class="text">
+
+<h2>Government</h2>
+
+<p>
+
+Provide a brief overview of the governmental structure,
+ministries, constitution, public institutions,
+and administration of the kingdom.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="image-placeholder">
+Business Image
+</div>
+
+<div class="text">
+
+<h2>Business</h2>
+
+<p>
+
+Summarize commerce within Lynia, opportunities for investment,
+state enterprises, economic initiatives, and partnerships with
+domestic and foreign businesses.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="image-placeholder">
+Civil Code Image
+</div>
+
+<div class="text">
+
+<h2>Civil Code</h2>
+
+<p>
+
+Provide an overview of the laws, rights, responsibilities,
+citizenship, and legal principles that guide the Kingdom of Lynia.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© Kingdom of Lynia • All Rights Reserved
+
+</footer>
+
+</body>
+</html>
