@@ -3,260 +3,266 @@
    Main Stylesheet
 ========================== */
 
-:root{
-    --gold:#F4D03F;
-    --red:#D90429;
-    --white:#FFFFFF;
-    --light:#F8F8F8;
-    --dark:#222222;
-    --border:#C1121F;
+:root {
+    --gold: #F4D03F;
+    --red: #D90429;
+    --white: #FFFFFF;
+    --light: #F8F8F8;
+    --dark: #222222;
+    --border: #C1121F;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:Georgia, "Times New Roman", serif;
-    background:var(--light);
-    color:var(--dark);
-    line-height:1.7;
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden; /* Prevents horizontal scrolling overflow */
+}
+
+/* Base Image Safety Rule */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ==========================
    Header
 ========================== */
 
-header{
-    background:linear-gradient(180deg,var(--red),#b50020);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-    border-bottom:10px solid var(--gold);
+header {
+    background: linear-gradient(180deg, var(--red), #b50020);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 10px solid var(--gold);
+    width: 100%;
 }
 
-header img{
-    width:180px;
-    margin-bottom:30px;
+header img {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto 30px auto;
 }
 
-header h1{
-    font-size:3.5rem;
-    letter-spacing:4px;
-    text-transform:uppercase;
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    word-wrap: break-word;
 }
 
-header p{
-    max-width:850px;
-    margin:20px auto 0;
-    font-size:1.2rem;
-    opacity:.95;
+header p {
+    max-width: 850px;
+    margin: 20px auto 0;
+    font-size: 1.2rem;
+    opacity: .95;
 }
 
 /* ==========================
    Navigation
 ========================== */
 
-nav{
-    background:var(--gold);
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 10px rgba(0,0,0,.15);
+nav {
+    background: var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    width: 100%;
 }
 
-nav ul{
-    display:flex;
-    justify-content:center;
-    list-style:none;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
-nav li{
-    margin:0;
+nav li {
+    margin: 0;
 }
 
-nav a{
-    display:block;
-    color:var(--dark);
-    padding:18px 28px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.25s;
+nav a {
+    display: block;
+    color: var(--dark);
+    padding: 18px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .25s;
 }
 
-nav a:hover{
-    background:var(--red);
-    color:white;
-}
-
-/* ==========================
-   Sections
-========================== */
-
-section{
-    display:flex;
-    align-items:center;
-    gap:60px;
-
-    max-width:1300px;
-    margin:60px auto;
-    padding:40px;
-}
-
-section:nth-child(even){
-    flex-direction:row-reverse;
-}
-
-.text{
-    flex:1;
-}
-
-.text h2{
-    color:var(--red);
-    font-size:2.3rem;
-    margin-bottom:18px;
-    border-bottom:4px solid var(--gold);
-    display:inline-block;
-    padding-bottom:8px;
-}
-
-.text p{
-    font-size:1.1rem;
+nav a:hover {
+    background: var(--red);
+    color: white;
 }
 
 /* ==========================
-   Image Placeholder
+   Sections & Layout
 ========================== */
 
-.image{
-    flex:1;
-    display:flex;
-    justify-content:center;
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.image img{
-    width:100%;
-    max-width:450px;
-    border:8px solid var(--gold);
-    box-shadow:0 12px 30px rgba(0,0,0,.2);
+section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-.placeholder{
-    width:450px;
-    height:270px;
-    background:var(--gold);
-    border:6px solid var(--red);
-    color:var(--red);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:1.4rem;
-    font-weight:bold;
+section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    width: 100%;
+}
+
+.text h2 {
+    color: var(--red);
+    font-size: 2.3rem;
+    margin-bottom: 18px;
+    border-bottom: 4px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 /* ==========================
-   Cards
+   Image Containers
 ========================== */
 
-.card{
-    background:white;
-    border-left:8px solid var(--red);
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    border-radius:6px;
-    padding:30px;
+.image, 
+.image-placeholder {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img, 
+.image-placeholder img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 6px solid var(--gold);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.placeholder {
+    width: 100%;
+    max-width: 450px;
+    height: 270px;
+    background: var(--gold);
+    border: 6px solid var(--red);
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 /* ==========================
-   Buttons
+   Cards & Buttons
 ========================== */
 
-.button{
-    display:inline-block;
-    background:var(--red);
-    color:white;
-    text-decoration:none;
-    padding:14px 28px;
-    margin-top:25px;
-    border-radius:4px;
-    transition:.25s;
-    font-weight:bold;
+.card {
+    background: white;
+    border-left: 8px solid var(--red);
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    border-radius: 6px;
+    padding: 30px;
 }
 
-.button:hover{
-    background:var(--gold);
-    color:var(--dark);
+.button {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    margin-top: 25px;
+    border-radius: 4px;
+    transition: .25s;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: var(--gold);
+    color: var(--dark);
 }
 
 /* ==========================
    Footer
 ========================== */
 
-footer{
-    background:var(--red);
-    color:white;
-    text-align:center;
-    padding:35px;
-    margin-top:80px;
-    border-top:10px solid var(--gold);
+footer {
+    background: var(--red);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 60px;
+    border-top: 10px solid var(--gold);
+    width: 100%;
 }
 
 /* ==========================
-   Responsive
+   Mobile Responsiveness
 ========================== */
 
-@media (max-width:900px){
+@media (max-width: 900px) {
 
-section,
-section:nth-child(even){
+    section,
+    section:nth-child(even) {
+        flex-direction: column;
+        text-align: left; /* Keep text readable on mobile */
+        gap: 25px;
+        margin: 20px auto;
+        padding: 10px;
+    }
 
-    flex-direction:column;
-    text-align:center;
-}
+    nav a {
+        padding: 12px 15px;
+    }
 
-nav ul{
-    flex-wrap:wrap;
-}
+    header h1 {
+        font-size: 2.2rem;
+    }
 
-nav a{
-    padding:15px 18px;
-}
+    .text h2 {
+        font-size: 1.8rem;
+    }
 
-header h1{
-    font-size:2.4rem;
-}
-
-.text h2{
-    font-size:2rem;
-}
-
-.placeholder{
-    width:100%;
-    max-width:450px;
-}
-
-}
-.image-placeholder img {
-  max-width: 500px; /* Ensures it never gets wider than 500px */
-  width: 100%;       /* Allows it to shrink on smaller screens */
-  height: auto;      /* Keeps the original aspect ratio so it doesn't distort */
-}
-/* Ensure the page content expands to fill the screen width */
-body, main, .container {
-  width: 100%;
-  max-width: 1200px; /* Adjust this max-width to your liking */
-  margin: 0 auto;    /* Centers the layout */
-  padding: 16px;     /* Prevents text from touching screen edges */
-  box-sizing: border-box;
-}
-/* Responsive images that never exceed their container */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    .image img, 
+    .image-placeholder img,
+    .placeholder {
+        max-width: 100%;
+    }
 }
