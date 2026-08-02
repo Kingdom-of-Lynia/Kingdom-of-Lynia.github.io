@@ -1,0 +1,243 @@
+/* ==========================
+   Kingdom of Lynia
+   Main Stylesheet
+========================== */
+
+:root{
+    --gold:#F4D03F;
+    --red:#D90429;
+    --white:#FFFFFF;
+    --light:#F8F8F8;
+    --dark:#222222;
+    --border:#C1121F;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia, "Times New Roman", serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.7;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    background:linear-gradient(180deg,var(--red),#b50020);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+    border-bottom:10px solid var(--gold);
+}
+
+header img{
+    width:180px;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:3.5rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+header p{
+    max-width:850px;
+    margin:20px auto 0;
+    font-size:1.2rem;
+    opacity:.95;
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+nav{
+    background:var(--gold);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav li{
+    margin:0;
+}
+
+nav a{
+    display:block;
+    color:var(--dark);
+    padding:18px 28px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
+}
+
+nav a:hover{
+    background:var(--red);
+    color:white;
+}
+
+/* ==========================
+   Sections
+========================== */
+
+section{
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+    max-width:1300px;
+    margin:60px auto;
+    padding:40px;
+}
+
+section:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+.text{
+    flex:1;
+}
+
+.text h2{
+    color:var(--red);
+    font-size:2.3rem;
+    margin-bottom:18px;
+    border-bottom:4px solid var(--gold);
+    display:inline-block;
+    padding-bottom:8px;
+}
+
+.text p{
+    font-size:1.1rem;
+}
+
+/* ==========================
+   Image Placeholder
+========================== */
+
+.image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.image img{
+    width:100%;
+    max-width:450px;
+    border:8px solid var(--gold);
+    box-shadow:0 12px 30px rgba(0,0,0,.2);
+}
+
+.placeholder{
+    width:450px;
+    height:270px;
+    background:var(--gold);
+    border:6px solid var(--red);
+    color:var(--red);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.card{
+    background:white;
+    border-left:8px solid var(--red);
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    border-radius:6px;
+    padding:30px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.button{
+    display:inline-block;
+    background:var(--red);
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    margin-top:25px;
+    border-radius:4px;
+    transition:.25s;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:var(--gold);
+    color:var(--dark);
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:var(--red);
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:80px;
+    border-top:10px solid var(--gold);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:900px){
+
+section,
+section:nth-child(even){
+
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul{
+    flex-wrap:wrap;
+}
+
+nav a{
+    padding:15px 18px;
+}
+
+header h1{
+    font-size:2.4rem;
+}
+
+.text h2{
+    font-size:2rem;
+}
+
+.placeholder{
+    width:100%;
+    max-width:450px;
+}
+
+}
