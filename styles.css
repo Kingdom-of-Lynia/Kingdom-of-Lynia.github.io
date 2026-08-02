@@ -246,3 +246,17 @@ header h1{
   width: 100%;       /* Allows it to shrink on smaller screens */
   height: auto;      /* Keeps the original aspect ratio so it doesn't distort */
 }
+/* Ensure the page content expands to fill the screen width */
+body, main, .container {
+  width: 100%;
+  max-width: 1200px; /* Adjust this max-width to your liking */
+  margin: 0 auto;    /* Centers the layout */
+  padding: 16px;     /* Prevents text from touching screen edges */
+  box-sizing: border-box;
+}
+/* Responsive images that never exceed their container */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
