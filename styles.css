@@ -170,10 +170,9 @@ section:nth-child(even) {
 .image img, 
 .image-placeholder img {
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    border: 6px solid var(--gold);
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    height: 300px;
+    object-fit: cover;
+    display: block;
 }
 
 .placeholder {
